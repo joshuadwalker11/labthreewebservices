@@ -1,0 +1,3 @@
+This is the front end (client/ user) of the example
+
+Run: npm run start

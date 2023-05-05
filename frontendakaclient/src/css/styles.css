@@ -1,0 +1,31 @@
+body {
+	background-color: aliceblue;
+}
+
+
+h1 {
+	color: white;
+	background-color: black;
+}
+
+ul>li {
+	margin: 0 5px;
+	cursor: pointer;
+	transition: .5;
+}
+
+
+ul>li:hover {
+	background-color: aquamarine;
+}
+
+
+ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+#task-prompt {
+	font-size: 16pt;
+}

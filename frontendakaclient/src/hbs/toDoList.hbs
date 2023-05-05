@@ -1,0 +1,26 @@
+<h1>Tasks</h1>
+{{!--
+for lab 3, add button to list --}}
+
+<h3>Add Tasks</h3>
+<input type="text" id="addTaskDescription" placeholder="Enter your task here">
+<button id="addTask">Add Task</button>
+
+<h3>Task List</h3>
+<p id="task-prompt">Check a task once complete</p>
+<ul>
+	{{#each results}}
+	<li data-tdid="{{todoItemId}}" {{#if isComplete}} class="complete" {{else}} class="incomplete" {{/if}}>
+
+		{{#if isComplete}}
+		<input class="iscomplete" type="checkbox" checked>
+		{{else}}
+		<input class="iscomplete" type="checkbox">
+		{{/if}}
+
+		<input type="text" class="task" value="{{{task}}}" />
+		<button class="save">Save</button>
+		<button class="delete">Delete</button>
+	</li>
+	{{/each}}
+</ul>
